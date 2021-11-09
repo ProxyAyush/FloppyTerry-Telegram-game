@@ -1,1 +1,1 @@
-# T-Rex Telegram Game
+# FloppyTerry Telegram Game
