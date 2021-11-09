@@ -1,3 +1,5 @@
+var url = new URL(location.href);
+var playerid = url.searchParams.get("id");
 var debugmode = false;
 
 var states = Object.freeze({
@@ -480,3 +482,9 @@ var isIncompatible = {
    return (isIncompatible.Android() || isIncompatible.BlackBerry() || isIncompatible.iOS() || isIncompatible.Opera() || isIncompatible.Safari() || isIncompatible.Windows());
    }
 };
+// Submit highscore to Telegram
+var xmlhttp = new XMLHttpRequest();
+var url = "https://floppyterry.herokuapp.com/highscore/" + distance  +
+"?id=" + playerid;
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
