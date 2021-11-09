@@ -2,12 +2,12 @@ const express = require("express");
 const path = require("path");
 const TelegramBot = require("node-telegram-bot-api");
 
-const TOKEN = "YOUR_API_TOKEN_GOES_HERE";
+const TOKEN = "2129812330:AAHvsmcx05OdM8h_ftru5NLOlYpXK3Mnt9M";
 const server = express();
 const bot = new TelegramBot(TOKEN, { polling: true } );
 
 const port = process.env.PORT || 5000;
-const gameName = "trexjump";
+const gameName = "floppyterry";
 
 const queries = {};
 
